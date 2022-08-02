@@ -10,7 +10,8 @@ import xarray
 #support website: https://www.pythontutorial.net/tkinter/tkinter-entry/
 #datetime: https://www.code4example.com/python/python-user-input-date-and-time/
 
-def find_nearest(array, value):
+#Defining the nearest location finding methods
+def find_nearest(array, value):   
     array = np.asarray(array)
     idx = (np.abs(array - value)).argmin()
     return idx
